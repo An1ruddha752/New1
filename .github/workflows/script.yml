@@ -1,0 +1,10 @@
+name: Python
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a Motion Detector
+        run: python .github/workflows/Motiondetector.py
